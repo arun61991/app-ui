@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="offset-md-4 col-md-4">            
+            <div class="account-wall">                
+                <div class="form-signin">
+                <input type="text" class="form-control" placeholder="Email" autofocus>
+                <input type="password" class="form-control" placeholder="Password">
+                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="Last Name">
+                <button class="btn btn-lg btn-primary btn-block" (click)="loginFormSubmit()">
+                    Register</button>                
+                </div>
+                <a [routerLink]="['../login']" class="text-center new-account">Go To Login</a>
+            </div>            
+        </div>
+    </div>
+</div>

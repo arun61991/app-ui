@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a [routerLink]="['dashboard']" class="nav-link">Dashboard <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['rfq']" class="nav-link" href="#">Rfq</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['adminProduct']" class="nav-link" href="#">Product</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['api']" class="nav-link" href="#">API</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+      <button (click)="logOut()" class="btn btn-outline-success my-2 my-sm-0" >Log out</button>
+    </form>
+  </div>
+</nav>
+<router-outlet></router-outlet>

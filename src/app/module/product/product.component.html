@@ -1,0 +1,26 @@
+<div class="row col-md-12 ">
+    <div class="form-inline col-md-12 justify-content-md-center " >
+        <input class="form-control  col-md-6" placeholder="Enter CAS No., Catalog No. Or Product Name" 
+            aria-label="Search">
+        <button (click)="searchClick()" class="btn btn-outline-success">Search</button>
+    </div>
+</div>
+<br>
+<div class="row col-md-12 ">
+    <div class="card-deck">
+        <div class="card" *ngFor="let productVO of productVOList">                        
+            <div class="card-header"><h5 class="card-title">{{productVO.name}}</h5></div>             
+            <div class="card-body">
+                <div class="row col-md-12 " style="padding-left: 0px;padding-right: 1px;">
+                    <img class="card-img-top col-md-6" src="assets/images/card.jpg" alt="Card image cap">
+                    <ul class="list-group col-md-6">
+                        <li class="list-group-item"><B>CASNo</B>: {{productVO.CASNo}}</li>
+                        <li class="list-group-item"><B>Molecular Formula</B>: {{productVO.molecularFormula}}</li>
+                        <li class="list-group-item"><B>Molecular Weight</B>: {{productVO.molecularWeight}}</li>
+                        <li class="list-group-item"><B>CATNo</B>: {{productVO.CATNo}}</li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>         
+    </div>    
+</div>
